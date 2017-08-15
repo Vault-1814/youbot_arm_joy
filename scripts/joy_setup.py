@@ -19,8 +19,8 @@ class JoySetup:
     def __init__(self):
         sub = rospy.Subscriber('joy', Joy, self.joyCallback)
 
+        # current touched button
         self.touchedAxle = -42
-        self.prevAxle = []
         self.touchedButton = -42
 
         self.loop()
@@ -54,6 +54,7 @@ class JoySetup:
 
                     flag = True
                     while flag:
+                        # TODO: if CNTRL + C exit from here
                         if self.touchedButton != -42:
                             config['btn'][pip] = self.touchedButton
                             flag = False
