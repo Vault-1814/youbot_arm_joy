@@ -10,7 +10,7 @@ DEFAULT_FILE_CONFIG = 'config/default_joy.json'
 
 # needness buttons
 # l -- left, r -- right, c -- cross
-USE_PIPS = ['lX', 'lY', 'rX', 'rY', 'goHome', 'initPose']
+USE_PIPS = ['lX', 'lY', 'rX', 'rY', 'cX', 'cY', 'goHome', 'goInit']
 
 
 class JoySetup:
